@@ -16,7 +16,7 @@ import twitter4j.conf.ConfigurationBuilder;
 public class StatusTwitter {
 
     /**
-     * @param args the command line arguments
+     * @param args linea de argumentos
      * @throws twitter4j.TwitterException
      */
     public static void main(String[] args) throws TwitterException {
