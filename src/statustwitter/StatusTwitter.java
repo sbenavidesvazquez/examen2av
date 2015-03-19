@@ -23,12 +23,12 @@ public class StatusTwitter {
 
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("")
-                .setOAuthConsumerSecret("")
-                .setOAuthAccessToken("")
-                .setOAuthAccessTokenSecret("");
-        TwitterFactory twit = new TwitterFactory(cb.build());
-        Twitter rSocial = tf.getInstance();
+                .setOAuthConsumerKey("xxxx")
+                .setOAuthConsumerSecret("xxxxxx")
+                .setOAuthAccessToken("xxxxxxx")
+                .setOAuthAccessTokenSecret("xxxxxx");
+        TwitterFactory th = new TwitterFactory(cb.build());
+        Twitter rSocial = th.getInstance();
 
         Query busqueda = new Query("#papapitufo");
         QueryResult result = rSocial.search(busqueda);
