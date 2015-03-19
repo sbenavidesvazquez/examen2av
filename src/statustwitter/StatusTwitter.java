@@ -28,12 +28,12 @@ public class StatusTwitter {
                 .setOAuthAccessToken("**************************************************")
                 .setOAuthAccessTokenSecret("******************************************");
         TwitterFactory tf = new TwitterFactory(cb.build());
-        Twitter twitter = tf.getInstance();
+        Twitter rSocial = tf.getInstance();
 
-        Query query = new Query("#Cangas");
-        QueryResult result = twitter.search(query);
-        for (Status status : result.getTweets()) {
-            System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
+        Query busqueda = new Query("#papapitufo");
+        QueryResult result = rSocial.search(busqueda);
+        for (Status Estos : result.getTweets()) {
+            System.out.println("@" + Estos.getUser().getScreenName() + ":" + Estos.getText());
         }
     }
 }
